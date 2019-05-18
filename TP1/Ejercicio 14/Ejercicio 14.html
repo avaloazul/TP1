@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>Formulario Simple</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-image: url(14.jpg);
+	background-repeat: no-repeat;
+}
+body,td,th {
+	font-size: 24px;
+	font-weight: bold;
+}
+.c {
+	font-family: Comic Sans MS, cursive;
+}
+.wh {
+	color: #FFF;
+}
+</style>
+</head>
+<body>
+  
+<form action="mailto:CorreoEjemplo@Gmail.com" method="post" enctype="text/plain">
+    <h1 align="center" class="c">FORMULARIO</h1>
+    <div align="center">
+      <fieldset>
+        <legend class="c">Datos personales</legend>
+        <span class="c">*Apellido y nombre</span>
+        <input type="text" name="nombre" size="30"><br>
+        <span class="c">*Documento de identidad</span>
+        <input type="text" name="dni" size="8"><br>
+        <span class="c">*Fecha de nacimiento</span>
+        <input type="text" name="fechanacimiento" size="12"><br>
+        <span class="c">*Dirección </span>
+        <input type="text" name="direccionpersona" size="30"><br>
+        <span class="c">*Contraseña</span>
+        <input type="password" name="clave" size="25"><br>
+      </fieldset>
+      </p>
+    </div>
+  <p align="center" class="c">Escriba su comentario</p>
+  <p align="center"><textarea name="comentarios" rows="4" cols="45"></textarea></p>
+  <p align="center" class="c">Elija una opción</p>
+  <p align="center">
+    <span class="wh">Box 1
+<input type="radio" name="Opcion" value="1"><br>
+    Box 2
+     <input type="radio" name="Opcion" value="2"><br>
+    Box 3
+     <input type="radio" name="Opcion" value="3"><br>
+    Box 4</span>
+    <input type="radio" name="Opcion" value="4"><br>
+  </p>
+  <p align="center">&nbsp;</p>
+  <p align="center" class="wh"><span class="c">Elija uno o varios colores:</span></p>
+  <p align="center"><select name="colores[]" size="6" multiple>
+ <option value="1">Rojo</option>
+ <option value="2">Verde</option>
+ <option value="3">Azul</option>
+ <option value="4">Amarillo</option>
+ <option value="5">Blanco</option>
+ <option value="6">Negro</option>
+ <option value="7">Naranja</option>
+ <option value="8">Violeta</option>
+</select>
+</p>
+<p align="center" class="c"><span class="wh">Elija entre estas frutas</span></p>
+  <p align="center">
+    <select name="articulo">
+    <optgroup label="Frutas">
+    <option value="1">Naranjas</option>
+    <option value="2">Manzanas</option>
+    <option value="3">Peras</option>
+    <option value="4">Uvas</option>
+    <option value="5">Limon</option>
+    <option value="6">Tomate</option>
+  </optgroup>
+  </select>
+  </p>
+    <div align="center">
+      <button type="submit">	Enviar</button>
+      <input type="reset"  value="Borrar">
+      </p>
+    </div>
+</form>
+
+</body>
+</html>
